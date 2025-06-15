@@ -5,7 +5,7 @@
 
 This project was developed as part of a school assignment during my third year of high school. It is an e-commerce platform dedicated to buying and selling items related to the world of Formula 1. Instead of using a traditional database, the project uses JSON files (<ins>*not because I wanted it, but because it was expressly requested that way*</ins>) to store user data and product information.
 
-Please note that this project was created within the constraints of a classroom environment, with limited technology choices. The assignment required using only HTML, CSS, optional JavaScript, and Python. As such, this project should be viewed primarily as an exercise rather than a professional-grade application.
+Please note that this project was created within the constraints of a classroom environment, with limited technology choices. The assignment required using only HTML, CSS, optional JavaScript, and Python (<ins>*Basic Flask API*</ins>). As such, this project should be viewed primarily as an exercise rather than a professional-grade application.
 
 Although I invested significant effort into this work, it does not reflect how I would approach building a real-world e-commerce site designed to handle large volumes of data and multiple pages. For instance, some aspects have been deliberately ignored—such as missing links in the footer—that serve only aesthetic or demonstrative purposes.
 
