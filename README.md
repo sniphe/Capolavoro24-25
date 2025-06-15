@@ -3,7 +3,7 @@
 
 ### F1 Shop Project
 
-This project was developed as part of a school assignment during my third year of high school. It is an e-commerce platform dedicated to buying and selling items related to the world of Formula 1. Instead of using a traditional database, the project uses JSON files to store user data and product information.
+This project was developed as part of a school assignment during my third year of high school. It is an e-commerce platform dedicated to buying and selling items related to the world of Formula 1. Instead of using a traditional database, the project uses JSON files (<ins>*not because I wanted it, but because it was expressly requested that way*</ins>) to store user data and product information.
 
 Please note that this project was created within the constraints of a classroom environment, with limited technology choices. The assignment required using only HTML, CSS, optional JavaScript, and Python. As such, this project should be viewed primarily as an exercise rather than a professional-grade application.
 
