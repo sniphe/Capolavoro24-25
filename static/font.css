@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Formula1-Bold';
+    src: url('./font/Formula1-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formula1-Regular';
+    src: url('./font/Formula1-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formula1-Wide';
+    src: url('./font/Formula1-Wide.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

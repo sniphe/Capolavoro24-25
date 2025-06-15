@@ -1,0 +1,18 @@
+[
+    {
+        "nome": "Gianluca",
+        "email": "gt.tricarico@gmail.com",
+        "password": "G1@nlu(@",
+        "prodotti_in_vendita": 2,
+        "vendite_concluse": 0,
+        "guadagni": 0.0
+    },
+    {
+        "nome": "Davide",
+        "email": "dvd27j@yahoo.it",
+        "password": "33022",
+        "prodotti_in_vendita": 10,
+        "vendite_concluse": 1,
+        "guadagni": 90.0
+    }
+]

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='sponsorSlider.css') }}">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='font.css') }}">
+        <title>F1 Shop</title>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">    
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="display: flex; flex-direction: row; align-items: center; gap: 10px; font-family: 'Formula1-Bold';"><img src="{{ url_for('static', filename='public/f1-new.svg') }}" style="height: 50px;"> Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrello.html">Carrello</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="abbigliamento.html">Abbigliamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accessori.html">Accessori</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modelliInScala.html">Modelli in scala</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profilo.html" style="font-family: 'Formula1-Bold';">Profilo</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Registrati</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="loginLink" class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main style="padding-top: 5%; padding-bottom: 5%;">
+            <div>
+                <h1>Benvenuto, {{ user.nome }}</h1>
+                <br>
+                <br>
+                <div style="display: flex; flex-direction: row;">
+                    <div style="margin-right: 100px; text-align: center;">
+                        <p>Oggetti in vendità</p>
+                        <p style="font-size: 40px; margin-top: 20px;">{{ user.prodotti_in_vendita }}</p>
+                    </div>
+                    <div style="margin-right: 100px; text-align: center;">
+                        <p>Oggetto venduti</p>
+                        <p style="font-size: 40px; margin-top: 20px;">{{ user.vendite_concluse }}</p>
+                    </div>
+                    <div style="width: 125px; text-align: center;">
+                        <p>Guadagni</p>
+                        <p style="font-size: 40px; margin-top: 20px;">{{ user.guadagni }}</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <p>Ecco qui una lista di cose da te messe in vendità: </p>
+                <div class="conteiner-prodotti-index">
+                    {% for prodotto in prodotti %}
+                        <a class="link-card" href="{{ url_for('prodotto', id=prodotto.id) }}">
+                            <div class="card" style="width: 19rem; align-items: center; border-radius: 22px; border: none; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 10px;">
+                                <br>
+                                <img src="{{ url_for('static', filename= prodotto.immagine) }}" class="card-img-top" style="max-height: 100px; max-width: 100px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ prodotto.nome | truncate(17, True, '...')}}</h5>
+                                    <p class="card-text">{{ prodotto.descrizione | truncate(50, True, '...')}}</p>
+                                    <br>
+                                    <p style="font-size: 22px;">{{ "%.2f"|format(prodotto.prezzo) }}$</p>
+                                    <div style="margin-top: 15px; display: flex; flex-direction: row;">
+                                        <form method="POST" action="{{ url_for('elimina_prodotto', prodotto_id=prodotto.id) }}">
+                                            <button type="submit" class="btn btn-outline-danger">Elimina</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button style="background-color: black; color: white; border: none; width: 230px; height: 45px; align-items: center; justify-content: center; border-radius: 10px;"><a href="./nuovoProdotto" style="color: white; text-decoration: none;">Metti in vendità qualcosa</a></button>
+        </main>
+        <footer>
+            <h4 style="display: flex; flex-direction: row; align-items: center; gap: 10px; font-family: 'Formula1-Bold'; padding: 30px; justify-content: center;"><img src="{{ url_for('static', filename='public/Whitelogo/F1WhiteLogo.png') }}" style="height: 25px;"> Shop</h4>
+            <div id="sponsorFooter1">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/fom-website/2020/sponsors/lvmh">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/pirelli">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/aramco">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/Heineken%20-%20Outlined">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/AWS%20GLOBAL">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/fom-website/2020/sponsors/lenovo">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/dhl">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/qatar">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/msc">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/crypto.com">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_187,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/salesforce">
+            </div>
+            <hr style="height: 2px; width: 81%; margin-left: 9.5%; margin-right: 9.5%;">
+            <div id="sponsorFooter2">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/louis%20vuitton">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/TAGH_Shield_Monochrome_White-pw1">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/moet%20hennessy">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/Amex">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/santander">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/allwyn">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/globant">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/las%20vegas">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/Paramount+">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/barilla">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/liqui-moly">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/nestle">
+            </div>
+            <hr style="height: 2px; width: 81%; margin-left: 9.5%; margin-right: 9.5%;">
+            <div id="sponsorFooter3">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/puma">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/TATA">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/fom-website/2020/sponsors/aggreko">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/BBS">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_135,q_auto/f_auto/q_auto/content/dam/fom-website/2020/sponsors/mcdonalds">
+            </div>
+            <hr style="height: 2px; width: 81%; margin-left: 9.5%; margin-right: 9.5%;">
+            <div id="links-footer">
+                <div>
+                    <ul>
+                        <li class="title-footer-list"><a href="">Latest</a></li>
+                        <li class="title-footer-list"><a href="">What is F1?</a></li>
+                        <li class="title-footer-list"><a href="">Video</a></li>
+                        <li class="title-footer-list"><a href="">Drivers</a></li>
+                        <li class="title-footer-list"><a href="">Teams</a></li>
+                        <li class="title-footer-list"><a href="">Schedule</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title-footer-list"><a href="">Result</a></li>
+                        <li class="normal-link-footer"><a href="">2025 SEASON</a></li>
+                        <li class="normal-link-footer"><a href="">DRIVER STANDINGS</a></li>
+                        <li class="normal-link-footer"><a href="">TEAM STANDINGS</a></li>
+                        <li class="normal-link-footer"><a href="">ARCHIVE 1950-2024</a></li>
+                        <li class="normal-link-footer"><a href="">F1 AWARDS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title-footer-list"><a href="">Gaming</a></li>
+                        <li class="normal-link-footer"><a href="">ESPORTS</a></li>
+                        <li class="normal-link-footer"><a href="">FANTASY</a></li>
+                        <li class="normal-link-footer"><a href="">F1 24</a></li>
+                        <li class="normal-link-footer"><a href="">F1 MANAGER 24</a></li>
+                        <li class="normal-link-footer"><a href="">F1 PREDICT</a></li>
+                        <li class="normal-link-footer"><a href="">F1 MOBILE RACING</a></li>
+                        <li class="normal-link-footer"><a href="">F1 CLASH</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title-footer-list"><a href="">Live Timing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title-footer-list"><a href="">Tickets</a></li>
+                        <li class="title-footer-list"><a href="">F1® Experiences</a></li>
+                        <li class="title-footer-list"><a href="">Store</a></li>
+                        <li class="title-footer-list"><a href="">Paddock Club</a></li>
+                        <li class="title-footer-list"><a href="">F1® TV</a></li>
+                        <li class="title-footer-list"><a href="">F1® Authentics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title-footer-list"><a href="">Rules & Regulations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-35%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 0px 0px;
+    white-space: nowrap;
+    position: relative;
+    background-color: transparent;
+    margin-top: 15px;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background:transparent;
+  }
+  
+  .logos:after {
+    right: 0;
+    background: transparent;
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 35s slides infinite linear;
+    background-color: transparent;
+    align-items: center;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+  .logo_items img{
+    height: 75px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+  }

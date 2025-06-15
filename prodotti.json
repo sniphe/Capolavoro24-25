@@ -1,0 +1,134 @@
+[
+    {
+        "id": "604b3001-888d-4d8d-b22d-7931fac7b460",
+        "nome": "Scuderia Ferrari 2025 Drivers Oversized T-Shirt - Red",
+        "descrizione": "Questo \u00e8 un articolo in preordine. La spedizione \u00e8 prevista per gioved\u00ec 3 luglio 2025 o in prossimit\u00e0 di tale data. Ti contatteremo quando l'articolo verr\u00e0 spedito e in caso di modifiche alla data di spedizione prevista.",
+        "prezzo": 90.0,
+        "immagine": "public/prodotti-images/604b3001-888d-4d8d-b22d-7931fac7b460.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Ferrari"
+    },
+    {
+        "id": "2f6802dd-fabf-477c-b5d5-a8b77d1500a1",
+        "nome": "Red Bull Racing 2025 Team Set Up T-Shirt",
+        "descrizione": "This item will ship within 1 business day. Please proceed to checkout for shipping options and additional transit times.",
+        "prezzo": 78.0,
+        "immagine": "public/prodotti-images/2f6802dd-fabf-477c-b5d5-a8b77d1500a1.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Red Bull Racing"
+    },
+    {
+        "id": "218643d1-855e-4e3e-9e76-ee6748847ba4",
+        "nome": "Mercedes AMG Petronas adidas F1 2025 Team Driver T-Shirt - Black - Kids",
+        "descrizione": "They'll feel like part of the team with this kids' Mercedes - AMG Petronas Formula One Team Driver Jersey from adidas Motorsports. The black jersey is an exact replica of what the drivers wear, so young fans can imagine themselves behind the wheel while cheering on their favourite driver. AEROREADY manages moisture to keep them cool and comfortable whether they're watching the race or emulating they're idol in the backyard.",
+        "prezzo": 54.0,
+        "immagine": "public/prodotti-images/218643d1-855e-4e3e-9e76-ee6748847ba4.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Mercedes"
+    },
+    {
+        "id": "e554ef9c-0214-46b7-b2ce-671c71042a8d",
+        "nome": "McLaren 2025 Polo",
+        "descrizione": "Introducing the Castore X McLaren Formula 1 Teamwear Collection \u2013 a fusion of unparalleled function and exquisite form. This collection meticulously optimises the craftsmanship and attention to detail synonymous with both vehicle and apparel design. Crafted for every fan, it embodies innovation, creativity, and is tailored for supreme comfort and functionality.",
+        "prezzo": 94.0,
+        "immagine": "public/prodotti-images/e554ef9c-0214-46b7-b2ce-671c71042a8d.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "McLaren"
+    },
+    {
+        "id": "b5ddd626-16a2-4b5e-a8e4-7e4c9d88bdd9",
+        "nome": "Aston Martin Aramco Cognizant F1 2025 Fernando Alonso Team Driver T-Shirt",
+        "descrizione": "Show your support for the Aston Martin Aramco Cognizant team through the entire 2025 racing season with the official replica apparel range. With team colours and the iconic Aston Martin badge there's nothing better to wear when you're cheering for Stroll and Alonso, or just want to show your allegiance to a Formula One team of unrivalled pedigree.",
+        "prezzo": 49.0,
+        "immagine": "public/prodotti-images/b5ddd626-16a2-4b5e-a8e4-7e4c9d88bdd9.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Aston Martin"
+    },
+    {
+        "id": "45188e62-277a-4e7a-84c6-3120a4087826",
+        "nome": "BWT Alpine F1 Team 2023 Polo Shirt - Black",
+        "descrizione": "Further get into the spirit of the 2023 F1 campaign with this BWT Alpine polo shirt. Available in team colours, the polo gives fans a chance to look and feel like their favourite riders, with its great fit. BWT Alpine logos and sponsors are printed onto the upper back, chest, shoulders, and sleeves to give it that authentic look.",
+        "prezzo": 43.66,
+        "immagine": "public/prodotti-images/45188e62-277a-4e7a-84c6-3120a4087826.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Alpine"
+    },
+    {
+        "id": "61b68e64-9941-4b76-a86b-4881447db2ff",
+        "nome": "Williams Racing 2025 Team Polo - Navy",
+        "descrizione": "Showcase your support for Williams in the 2025 Formula One season with the official Replica range. Featuring iconic team branding and colours, this is the perfect addition to your racing apparel collection and is perfect for wearing as you cheer on Sainz, Albon and the whole crew through every turn and chicane of the 2025 season.",
+        "prezzo": 75.0,
+        "immagine": "public/prodotti-images/61b68e64-9941-4b76-a86b-4881447db2ff.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Williams"
+    },
+    {
+        "id": "c0b46d19-7f58-4300-b779-19a769bb5b69",
+        "nome": "Stake Sauber F1 Team 2025 Team T-Shirt",
+        "descrizione": "Take an essential garment and give it a real racing flourish. No item of clothing is likely to accompany you as far and wide as a classic tee, so make sure yours reflects your passion and makes you look good.",
+        "prezzo": 60.0,
+        "immagine": "public/prodotti-images/c0b46d19-7f58-4300-b779-19a769bb5b69.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Stake F1"
+    },
+    {
+        "id": "f9bcc001-5abc-4156-a0fd-992b37f9ba95",
+        "nome": "VCARB Hugo 2025 Team Polo - White",
+        "descrizione": "Take your passion for the Red Bull Formula 1 team and their star drivers everywhere you go with the official apparel range from Hugo Boss. Red Bull team and sponsor graphics highlight the style and confidence of one of Formula 1's premier teams and ensure you're ideally equipped to show your support anywhere you go.",
+        "prezzo": 106.0,
+        "immagine": "public/prodotti-images/f9bcc001-5abc-4156-a0fd-992b37f9ba95.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "VCARB"
+    },
+    {
+        "id": "f1350e87-d492-44db-aba3-98e023d7cb8b",
+        "nome": "Haas F1 Moneygram 2025 Team T-Shirt - Black",
+        "descrizione": "Take an essential garment and give it a real racing flourish. No item of clothing is likely to accompany you as far and wide as a classic tee, so make sure yours reflects your passion and makes you look good.",
+        "prezzo": 65.0,
+        "immagine": "public/prodotti-images/f1350e87-d492-44db-aba3-98e023d7cb8b.png",
+        "venditore_nome": "Davide",
+        "venditore_email": "dvd27j@yahoo.it",
+        "categoria": "Abbigliamento",
+        "team": "Haas"
+    },
+    {
+        "id": "16034f1c-70ab-4ba1-bdc3-18b5caa4ad56",
+        "nome": "Scuderia Ferrari Race Waterbottle",
+        "descrizione": "Make sure an item that goes to every training session shows off your true passion. The F1 branding ensures you'll proudly demonstrate your love of the sport whatever your choice of activity.",
+        "prezzo": 25.0,
+        "immagine": "public/prodotti-images/16034f1c-70ab-4ba1-bdc3-18b5caa4ad56.png",
+        "venditore_nome": "Gianluca",
+        "venditore_email": "gt.tricarico@gmail.com",
+        "categoria": "Accessori",
+        "team": "Ferrari"
+    },
+    {
+        "id": "6b9463be-0b41-42cf-952d-d7193989d4a7",
+        "nome": "Scuderia Ferrari SF75 No.55 2nd Place Bahrain GP Carlos Sainz 1:18 LookSmart Model",
+        "descrizione": "Own a keepsake of an iconic part of the Formula 1 experience. A brilliant keepsake to remind you of classic moments, and a great decoration as well.",
+        "prezzo": 313.0,
+        "immagine": "public/prodotti-images/6b9463be-0b41-42cf-952d-d7193989d4a7.png",
+        "venditore_nome": "Gianluca",
+        "venditore_email": "gt.tricarico@gmail.com",
+        "categoria": "Modellino in scala",
+        "team": "Ferrari"
+    }
+]

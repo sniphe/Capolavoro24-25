@@ -1,0 +1,162 @@
+*{
+    font-family: "Formula1-Regular";
+    font-size: small;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#navbarNav{
+    margin-left: 4%;
+    gap: 20px;
+}
+.nav-link, .navbar-brand{
+    color: black;
+}
+.navbar-nav{
+    gap: 30px;
+}
+
+#paragrafoHeader{
+    margin: 5%;
+    color: white;
+    
+}
+
+h1, h2, h3{
+    font-family: "Formula1-Bold";
+}
+
+
+/*General*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 87.5%;
+}
+
+#pills-tabContent{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: black !important;
+    color: white !important;
+  }
+  
+.carousel-inner{
+    border-radius: 25px;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: rgb(21, 21, 30);
+    color: white;
+    padding-bottom: 1px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#sponsorFooter1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#sponsorFooter1>img{
+    height: 70px;
+}
+
+#sponsorFooter2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 40px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+#sponsorFooter2>img{
+    height: 55px;
+}
+
+#sponsorFooter3{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 40px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+#sponsorFooter3>img{
+    height: 40px;
+}
+
+.title-footer-list{
+    font-family:"Formula1-Wide";
+    font-size: 20px;
+}
+
+#links-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    padding-inline: 40px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+li>a{
+    color: white;
+    text-decoration: none;
+}
+
+li>a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    padding-bottom: 2px;
+    color: white;
+}
+
+#links-footer>div>ul{
+    list-style-type: none;
+}
+
+.normal-link-footer > a{
+    font-size: 11px;
+    font-family: "Formula1-bold";
+    color: rgba(240, 248, 255, 0.788);
+}
+
+.conteiner-prodotti-index{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.link-card{
+    color: black;
+    text-decoration: none;
+}
