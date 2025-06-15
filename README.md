@@ -26,7 +26,7 @@ The goal of this project was to demonstrate web development fundamentals within 
 
 ## 🔍 Beyond the Classroom
 
-This project does **not** represent how I would build a real-world e-commerce platform. For examples of how I approach development using modern best practices and tools, feel free to explore my other repositories on [my GitHub profile](#).
+This project does **not** represent how I would build a real-world e-commerce platform. For examples of how I approach development using modern best practices and tools, feel free to explore my other repositories on [my GitHub profile](https://github.com/sniphe/sniphe).
 
 ---
 
