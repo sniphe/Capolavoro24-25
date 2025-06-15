@@ -1,16 +1,37 @@
-# Capolavoro dell'anno scolastico 2024/2025
+# 🏁 F1 Shop Project
 
+**F1 Shop** is a basic e-commerce platform for buying and selling Formula 1 merchandise. This project was developed as part of a high school assignment during my third year and reflects the constraints and requirements of that environment.
 
-### F1 Shop Project
+---
 
-This project was developed as part of a school assignment during my third year of high school. It is an e-commerce platform dedicated to buying and selling items related to the world of Formula 1. Instead of using a traditional database, the project uses JSON files (<ins>*not because I wanted it, but because it was expressly requested that way*</ins>) to store user data and product information.
+## 🚧 Project Context & Constraints
 
-Please note that this project was created within the constraints of a classroom environment, with limited technology choices. The assignment required using only HTML, CSS, optional JavaScript, and Python (<ins>*Basic Flask API*</ins>). As such, this project should be viewed primarily as an exercise rather than a professional-grade application.
+This project was created as a **school exercise**, not a professional application. It was developed under the following limitations:
 
-Although I invested significant effort into this work, it does not reflect how I would approach building a real-world e-commerce site designed to handle large volumes of data and multiple pages. For instance, some aspects have been deliberately ignored—such as missing links in the footer—that serve only aesthetic or demonstrative purposes.
+- **No database usage** — all data (users, products, etc.) is stored in JSON files as per assignment requirements.
+- **Allowed technologies:**
+  - HTML & CSS
+  - *(Optional)* JavaScript
+  - Python (Flask for a simple backend API)
 
-For a clearer understanding of how I would manage a similar project using current technologies and best practices, I encourage you to explore my other repositories on my GitHub profile.
+As a result, many production-level features such as robust authentication, scalable architecture, and full routing were either simplified or excluded.
 
-Nevertheless, the website is inspired by an existing Formula 1 merchandising site:
-https://f1store.formula1.com/en/?_s=bm-fi-f1-prtsite-topnav-230720-jm
+---
 
+## 🛠️ Purpose & Scope
+
+The goal of this project was to demonstrate web development fundamentals within the given constraints. While I dedicated significant effort to its design and structure, some parts—like non-functional footer links—were included only for visual or illustrative purposes.
+
+---
+
+## 🔍 Beyond the Classroom
+
+This project does **not** represent how I would build a real-world e-commerce platform. For examples of how I approach development using modern best practices and tools, feel free to explore my other repositories on [my GitHub profile](#).
+
+---
+
+## 🎯 Inspiration
+
+This project takes visual and thematic inspiration from the official [Formula 1 Store](https://f1store.formula1.com/en/?_s=bm-fi-f1-prtsite-topnav-230720-jm).
+
+---
